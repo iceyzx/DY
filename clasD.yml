@@ -16,20 +16,20 @@ dns:
   use-hosts: true
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-  - "*.lan"
-  - "*.localdomain"
-  - "*.example"
-  - "*.invalid"
-  - "*.localhost"
-  - "*.test"
-  - "*.local"
-  - "*.home.arpa"
-  - "*.direct"
-  - "+.services.googleapis.cn"
-  - "+.googleapis.cn"
-  - "+.xn--ngstr-lra8j.com"
-  - "+.*.apple.com"
-  - geosite:cn
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - "*.direct"
+    - "+.services.googleapis.cn"
+    - "+.googleapis.cn"
+    - "+.xn--ngstr-lra8j.com"
+    - "+.*.apple.com"
+    - "geosite:cn"
   nameserver:
     - tls://jp01.dns4me.net
     - https://dns.csaonline.de/dns-query
@@ -39,7 +39,6 @@ dns:
     "geosite:cn,apple,bilibili":
       - https://doh.pub/dns-query
       - 223.5.5.5
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    "geoip:240.0.0.0/4": "223.5.5.5"
+    "geoip:0.0.0.0/32": "223.5.5.5"
+    "geoip:private": "223.5.5.5"
