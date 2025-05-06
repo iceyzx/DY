@@ -170,8 +170,8 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback:
-    - tls://8.8.8.8
-    - tls://1.1.1.1
+    - https://doh.applied-privacy.net/query
+    - https://dns.controld.com/comss
   fallback-filter:
     geoip: true
     ipcidr:
