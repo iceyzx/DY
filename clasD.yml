@@ -18,7 +18,7 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback:
-    - https://https://dns.alidns.com/dns-query
+    - https://dns.alidns.com/dns-query
     - https://0ms.dev/dns-query
     - https://doh.applied-privacy.net/query
     - https://dns.controld.com/comss
