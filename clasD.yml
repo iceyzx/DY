@@ -166,6 +166,9 @@ dns:
   - "+.xn--ngstr-lra8j.com"
   - "+.*.apple.com"
   - geosite:cn
+    nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
     geoip: true
     ipcidr:
       - 240.0.0.0/4
