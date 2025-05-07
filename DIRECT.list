@@ -1,6 +1,5 @@
 # 我的域名
 DOMAIN-SUFFIX,uuzx.mom
-
 # 本地局域网地址
 DOMAIN-SUFFIX,ip6-localhost
 DOMAIN-SUFFIX,ip6-loopback
@@ -18,7 +17,6 @@ IP-CIDR,224.0.0.0/4,no-resolve
 IP-CIDR6,fc00::/7,no-resolve
 IP-CIDR6,fe80::/10,no-resolve
 IP-CIDR6,fd00::/8,no-resolve
-
 # 内容：Apple
 DOMAIN,scoreresearch.com
 DOMAIN-SUFFIX,aaplimg.com
@@ -49,7 +47,6 @@ IP-CIDR,144.178.48.20/32,no-resolve
 IP-CIDR,192.35.50.24/32,no-resolve
 IP-CIDR,198.183.17.24/32,no-resolve
 IP-CIDR,205.180.175.24/32,no-resolve
-
 # 内容：SteamCN
 DOMAIN,csgo.wmsj.cn
 DOMAIN,dl.steam.clngaa.com
