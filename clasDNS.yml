@@ -1,9 +1,3 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
 dns:
   enabled: true
   ipv6: false
@@ -11,14 +5,20 @@ dns:
   enhanced-mode: redir-host
   respect-rules: true
   proxy-server-nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
+    - 223.5.5.5
+    - 119.29.29.29
   nameserver-policy:
-  "+.steampowered.com": "223.5.5.5"
-  "geosite:cn,apple,bilibili": 
-  - https://doh.pub/dns-query
-  - 223.5.5.5
+    "DOMAIN-SUFFIX,steampowered.com": "223.5.5.5"
+    "GEOSITE,cn": 
+      - https://doh.pub/dns-query
+      - 223.5.5.5
+    "GEOSITE,apple": 
+      - https://doh.pub/dns-query
+      - 223.5.5.5
+    "GEOSITE,bilibili": 
+      - https://doh.pub/dns-query
+      - 223.5.5.5
   nameserver:
-  - tls://jp01.dns4me.net
-  - https://dns.csaonline.de/dns-query
-  - tls://unfiltered.adguard-dns.com
+    - tls://jp01.dns4me.net
+    - https://dns.csaonline.de/dns-query
+    - tls://unfiltered.adguard-dns.com
