@@ -1,0 +1,122 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies: []
+proxy-groups: []
+rules: []
+dns:
+  enabled: true
+  ipv6: false
+  listen: 0.0.0.0:7874
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.qq.com"
+    - geosite:cn
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+  nameserver-policy:
+    "geosite:cn": "223.5.5.5,119.29.29.29"
+    "geosite:geolocation-!cn": [tls://8.8.8.8, tls://1.1.1.1]
+
+
+
+[misc]
+clash_rule_base = https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/clasDNS.yml
+external_config = https://raw.githubusercontent.com/your-username/subconverter-config/main/pref.yml
+url = <your-subscription-url>
+enable_rule_generator = true
+overwrite_original_rules = true
+
+
+
+
+
+
+
+
+custom:
+  ruleset:
+    - HKG,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/youtube.list
+    - AI,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/AI.list
+    - GTA,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/GTA.list
+    - US,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/paypal.list
+    - tiktok,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/tiktok.list
+    - 自动选择,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/auto.list
+    - DIRECT,https://raw.githubusercontent.com/iceyzx/DY/refs/heads/main/DIRECT.list
+    - DIRECT,GEOSITE,CN
+    - 自动选择,GEOSITE,geolocation-!cn
+    - DIRECT,GEOIP,CN
+    - MATCH,NCloud
+  custom_proxy_group:
+    # 你的策略组定义（保持不变）
+    - name: NCloud
+      type: select
+      proxies:
+        - .*
+        - 自动选择
+        - DIRECT
+    # ... 其他策略组
+  clash:
+    port: 7890
+    socks-port: 7891
+    allow-lan: true
+    mode: Rule
+    log-level: info
+    external-controller: :9090
+    dns:
+      enabled: true
+      ipv6: false
+      listen: 0.0.0.0:7874
+      default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+      enhanced-mode: fake-ip
+      fake-ip-range: 198.18.0.1/16
+      fake-ip-filter-mode: blacklist
+      fake-ip-filter:
+        - "*.lan"
+        - "*.local"
+        - "*.qq.com"
+        - geosite:cn
+      nameserver:
+        - https://doh.pub/dns-query
+        - https://dns.alidns.com/dns-query
+      fallback:
+        - tls://8.8.8.8
+        - tls://1.1.1.1
+      fallback-filter:
+        geoip: true
+        ipcidr:
+          - 240.0.0.0/4
+          - 0.0.0.0/32
+      nameserver-policy:
+        "geosite:cn": "223.5.5.5,119.29.29.29"
+        "geosite:geolocation-!cn": [tls://8.8.8.8, tls://1.1.1.1]
+    tun:
+      enable: true
+      stack: mixed
+      dns-hijack:
+        - "any:53"
+        - "tcp://any:53"
+      auto-route: true
+      auto-redirect: true
+      auto-detect-interface: true
