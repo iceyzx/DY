@@ -1,0 +1,716 @@
+
+proxy-groups:
+  - name: 🧸 手动切换
+    type: select
+    proxies:
+      - 俄罗斯 A
+      - 俄罗斯 B
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 韩国
+      - 台湾
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+      - 加拿大
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 印度
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+      - DIRECT
+      - 🚀 自动选择
+  - name: 🚀 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 韩国
+      - 台湾
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+      - 加拿大
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 印度
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+  - name: 🚧 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 韩国
+      - 台湾
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+      - 加拿大
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 印度
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+  - name: 📣 YouTube
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+  - name: 💯 XAI
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 350
+    proxies:
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 韩国
+      - 台湾
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+      - 加拿大
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 印度
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+  - name: 🅾️ openai
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 350
+    proxies:
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 台湾
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+  - name: ⁉️ AI
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 日本 A
+      - 日本 B
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+      - 韩国
+      - 台湾
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+  - name: 💢 US
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+  - name: 🛑 HK
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+  - name: 🎀 TW
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 台湾
+      - 台湾 B
+      - 台湾 C
+      - 台湾 D
+      - 台湾 E
+      - 台湾 F
+      - 台湾 G
+      - 台湾 H
+  - name: 🌠 SG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 新加坡 A
+      - 新加坡 B
+      - 新加坡 C
+      - 新加坡 D
+      - 新加坡 E
+  - name: 🎌 JP
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 日本 A
+      - 日本 B
+  - name: ❣️ KR
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 韩国
+  - name: 🗺️ 欧洲
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 印度
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+  - name: 📛 TikTok
+    type: select
+    proxies:
+      - 日本 A
+      - 日本 B
+      - 美国 A
+      - 美国 B
+      - 美国 C
+      - 美国 D
+      - 美国 E
+      - 美国 F
+      - 美国 G
+      - 美国 H
+      - 美国 I
+      - 英国 A
+      - 英国 B
+      - 西班牙
+      - 土耳其
+      - 意大利
+      - 荷兰
+      - 德国
+  - name: 🌟 rstar
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 300
+    proxies:
+      - 香港动态 A
+      - 香港动态 B
+      - 香港动态 C
+      - HKG A
+      - HKG B
+      - HKG C
+      - HKG D
+      - HKG E
+      - HKG F
+      - HKG G
+      - HKG H
+      - HKG I
+      - HKG J
+      - HKG K
+      - HKG L
+      - HKG M
+      - HKG N
+      - HKG O
+  - name: 🌟 GTA
+    type: select
+    proxies:
+      - 🌟 rstar
+      - DIRECT
+  - name: ⭕ 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 自动选择
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 自动选择
+rules:
+  - PROCESS-NAME,aria2c.exe,⭕ 全球直连
+  - PROCESS-NAME,fdm.exe,⭕ 全球直连
+  - PROCESS-NAME,Folx.exe,⭕ 全球直连
+  - PROCESS-NAME,NetTransport.exe,⭕ 全球直连
+  - PROCESS-NAME,Thunder.exe,⭕ 全球直连
+  - PROCESS-NAME,Transmission.exe,⭕ 全球直连
+  - PROCESS-NAME,uTorrent.exe,⭕ 全球直连
+  - PROCESS-NAME,WebTorrent.exe,⭕ 全球直连
+  - PROCESS-NAME,WebTorrent Helper.exe,⭕ 全球直连
+  - PROCESS-NAME,qbittorrent.exe,⭕ 全球直连
+  - DOMAIN-SUFFIX,smtp,⭕ 全球直连
+  - DOMAIN-KEYWORD,aria2,⭕ 全球直连
+  - PROCESS-NAME,DownloadService.exe,⭕ 全球直连
+  - PROCESS-NAME,Weiyun.exe,⭕ 全球直连
+  - PROCESS-NAME,baidunetdisk.exe,⭕ 全球直连
+  - DOMAIN,uuzx.mom,⭕ 全球直连
+  - DOMAIN-KEYWORD,uuzx.mom,⭕ 全球直连
+  - DOMAIN-SUFFIX,uuzx.mom,⭕ 全球直连
+  - DOMAIN-SUFFIX,acl4.ssr,⭕ 全球直连
+  - DOMAIN-SUFFIX,ip6-localhost,⭕ 全球直连
+  - DOMAIN-SUFFIX,ip6-loopback,⭕ 全球直连
+  - DOMAIN-SUFFIX,lan,⭕ 全球直连
+  - DOMAIN-SUFFIX,local,⭕ 全球直连
+  - DOMAIN-SUFFIX,localhost,⭕ 全球直连
+  - IP-CIDR,0.0.0.0/8,⭕ 全球直连,no-resolve
+  - IP-CIDR,10.0.0.0/8,⭕ 全球直连,no-resolve
+  - IP-CIDR,100.64.0.0/10,⭕ 全球直连,no-resolve
+  - IP-CIDR,127.0.0.0/8,⭕ 全球直连,no-resolve
+  - IP-CIDR,172.16.0.0/12,⭕ 全球直连,no-resolve
+  - IP-CIDR,192.168.0.0/16,⭕ 全球直连,no-resolve
+  - IP-CIDR,198.18.0.0/16,⭕ 全球直连,no-resolve
+  - IP-CIDR,224.0.0.0/4,⭕ 全球直连,no-resolve
+  - IP-CIDR6,::1/128,⭕ 全球直连,no-resolve
+  - IP-CIDR6,fc00::/7,⭕ 全球直连,no-resolve
+  - IP-CIDR6,fe80::/10,⭕ 全球直连,no-resolve
+  - IP-CIDR6,fd00::/8,⭕ 全球直连,no-resolve
+  - DOMAIN,instant.arubanetworks.com,⭕ 全球直连
+  - DOMAIN,setmeup.arubanetworks.com,⭕ 全球直连
+  - DOMAIN,router.asus.com,⭕ 全球直连
+  - DOMAIN,www.asusrouter.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,hiwifi.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,leike.cc,⭕ 全球直连
+  - DOMAIN-SUFFIX,miwifi.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,my.router,⭕ 全球直连
+  - DOMAIN-SUFFIX,p.to,⭕ 全球直连
+  - DOMAIN-SUFFIX,peiluyou.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,phicomm.me,⭕ 全球直连
+  - DOMAIN-SUFFIX,router.ctc,⭕ 全球直连
+  - DOMAIN-SUFFIX,routerlogin.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,tendawifi.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,zte.home,⭕ 全球直连
+  - DOMAIN-SUFFIX,tplogin.cn,⭕ 全球直连
+  - DOMAIN-SUFFIX,wifi.cmcc,⭕ 全球直连
+  - DOMAIN,csgo.wmsj.cn,⭕ 全球直连
+  - DOMAIN,dl.steam.clngaa.com,⭕ 全球直连
+  - DOMAIN,dl.steam.ksyna.com,⭕ 全球直连
+  - DOMAIN,dota2.wmsj.cn,⭕ 全球直连
+  - DOMAIN,st.dl.bscstorage.net,⭕ 全球直连
+  - DOMAIN,st.dl.eccdnx.com,⭕ 全球直连
+  - DOMAIN,st.dl.pinyuncloud.com,⭕ 全球直连
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,⭕ 全球直连
+  - DOMAIN,steampowered.com.8686c.com,⭕ 全球直连
+  - DOMAIN,steamstatic.com.8686c.com,⭕ 全球直连
+  - DOMAIN,wmsjsteam.com,⭕ 全球直连
+  - DOMAIN,xz.pphimalayanrt.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,cm.steampowered.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,steamchina.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,steamcontent.com,⭕ 全球直连
+  - DOMAIN-SUFFIX,steamusercontent.com,⭕ 全球直连
+  - DOMAIN,apple.comscoreresearch.com,🧸 手动切换
+  - DOMAIN-SUFFIX,aaplimg.com,🧸 手动切换
+  - DOMAIN-SUFFIX,akadns.net,🧸 手动切换
+  - DOMAIN-SUFFIX,apple-cloudkit.com,🧸 手动切换
+  - DOMAIN-SUFFIX,apple-dns.net,🧸 手动切换
+  - DOMAIN-SUFFIX,apple-mapkit.com,🧸 手动切换
+  - DOMAIN-SUFFIX,apple.co,🧸 手动切换
+  - DOMAIN-SUFFIX,apple.com,🧸 手动切换
+  - DOMAIN-SUFFIX,apple.com.cn,🧸 手动切换
+  - DOMAIN-SUFFIX,apple.news,🧸 手动切换
+  - DOMAIN-SUFFIX,appstore.com,🧸 手动切换
+  - DOMAIN-SUFFIX,cdn-apple.com,🧸 手动切换
+  - DOMAIN-SUFFIX,crashlytics.com,🧸 手动切换
+  - DOMAIN-SUFFIX,icloud-content.com,🧸 手动切换
+  - DOMAIN-SUFFIX,icloud.com,🧸 手动切换
+  - DOMAIN-SUFFIX,icloud.com.cn,🧸 手动切换
+  - DOMAIN-SUFFIX,itunes.com,🧸 手动切换
+  - DOMAIN-SUFFIX,me.com,🧸 手动切换
+  - DOMAIN-SUFFIX,mzstatic.com,🧸 手动切换
+  - IP-CIDR,17.0.0.0/8,🧸 手动切换,no-resolve
+  - IP-CIDR,63.92.224.0/19,🧸 手动切换,no-resolve
+  - IP-CIDR,65.199.22.0/23,🧸 手动切换,no-resolve
+  - IP-CIDR,139.178.128.0/18,🧸 手动切换,no-resolve
+  - IP-CIDR,144.178.0.0/19,🧸 手动切换,no-resolve
+  - IP-CIDR,144.178.36.0/22,🧸 手动切换,no-resolve
+  - IP-CIDR,144.178.48.0/20,🧸 手动切换,no-resolve
+  - IP-CIDR,192.35.50.0/24,🧸 手动切换,no-resolve
+  - IP-CIDR,198.183.17.0/24,🧸 手动切换,no-resolve
+  - IP-CIDR,205.180.175.0/24,🧸 手动切换,no-resolve
+  - DOMAIN,api.imem.app,🚀 自动选择
+  - DOMAIN,api.swiftgram.app,🚀 自动选择
+  - DOMAIN-SUFFIX,cdn-telegram.org,🚀 自动选择
+  - DOMAIN-SUFFIX,comments.app,🚀 自动选择
+  - DOMAIN-SUFFIX,contest.com,🚀 自动选择
+  - DOMAIN-SUFFIX,graph.org,🚀 自动选择
+  - DOMAIN-SUFFIX,legra.ph,🚀 自动选择
+  - DOMAIN-SUFFIX,mbrx.app,🚀 自动选择
+  - DOMAIN-SUFFIX,quiz.directory,🚀 自动选择
+  - DOMAIN-SUFFIX,stel.com,🚀 自动选择
+  - DOMAIN-SUFFIX,t.me,🚀 自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,🚀 自动选择
+  - DOMAIN-SUFFIX,telega.one,🚀 自动选择
+  - DOMAIN-SUFFIX,telegra.ph,🚀 自动选择
+  - DOMAIN-SUFFIX,telegram-cdn.org,🚀 自动选择
+  - DOMAIN-SUFFIX,telegram.dog,🚀 自动选择
+  - DOMAIN-SUFFIX,telegram.me,🚀 自动选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 自动选择
+  - DOMAIN-SUFFIX,telegram.space,🚀 自动选择
+  - DOMAIN-SUFFIX,telegramdownload.com,🚀 自动选择
+  - DOMAIN-SUFFIX,telesco.pe,🚀 自动选择
+  - DOMAIN-SUFFIX,tg.dev,🚀 自动选择
+  - DOMAIN-SUFFIX,tx.me,🚀 自动选择
+  - DOMAIN-SUFFIX,usercontent.dev,🚀 自动选择
+  - DOMAIN-KEYWORD,nicegram,🚀 自动选择
+  - IP-CIDR,109.239.140.0/24,🚀 自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,🚀 自动选择,no-resolve
+  - IP-CIDR,5.28.192.0/18,🚀 自动选择,no-resolve
+  - IP-CIDR,91.108.0.0/16,🚀 自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,🚀 自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23c::/47,🚀 自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,🚀 自动选择,no-resolve
+  - IP-CIDR6,2a0a:f280::/29,🚀 自动选择,no-resolve
+  - PROCESS-NAME,Telegram.exe,🚀 自动选择
+  - PROCESS-NAME,nekox.messenger,🚀 自动选择
+  - PROCESS-NAME,org.telegram.messenger,🚀 自动选择
+  - PROCESS-NAME,telegram-desktop,🚀 自动选择
+  - PROCESS-NAME,tw.nekomimi.nekogram,🚀 自动选择
+  - PROCESS-NAME,xyz.nextalone.nagram,🚀 自动选择
+  - DOMAIN-SUFFIX,grok.com,💯 XAI
+  - DOMAIN-SUFFIX,x.com,💯 XAI
+  - DOMAIN-SUFFIX,x.ai,💯 XAI
+  - DOMAIN,api.x.ai,💯 XAI
+  - DOMAIN,cdn.x.ai,💯 XAI
+  - DOMAIN-KEYWORD,openai,🅾️ openai
+  - DOMAIN-SUFFIX,auth0.com,🅾️ openai
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🅾️ openai
+  - DOMAIN-SUFFIX,chatgpt.com,🅾️ openai
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🅾️ openai
+  - DOMAIN-SUFFIX,events.statsigapi.net,🅾️ openai
+  - DOMAIN-SUFFIX,featuregates.org,🅾️ openai
+  - DOMAIN-SUFFIX,identrust.com,🅾️ openai
+  - DOMAIN-SUFFIX,intercom.io,🅾️ openai
+  - DOMAIN-SUFFIX,intercomcdn.com,🅾️ openai
+  - DOMAIN-SUFFIX,oaistatic.com,🅾️ openai
+  - DOMAIN-SUFFIX,oaiusercontent.com,🅾️ openai
+  - DOMAIN-SUFFIX,openai.com,🅾️ openai
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🅾️ openai
+  - DOMAIN-SUFFIX,sentry.io,🅾️ openai
+  - DOMAIN-SUFFIX,stripe.com,🅾️ openai
+  - DOMAIN-SUFFIX,sora.com,🅾️ openai
+  - DOMAIN-KEYWORD,anthropic,⁉️ AI
+  - DOMAIN-KEYWORD,claude,⁉️ AI
+  - DOMAIN-KEYWORD,copilot,⁉️ AI
+  - DOMAIN,ai.google.dev,⁉️ AI
+  - DOMAIN,api.githubcopilot.com,⁉️ AI
+  - DOMAIN,api.groq.com,⁉️ AI
+  - DOMAIN,api.together.xyz,⁉️ AI
+  - DOMAIN,bard.google.com,⁉️ AI
+  - DOMAIN,console.groq.com,⁉️ AI
+  - DOMAIN,copilot-proxy.githubusercontent.com,⁉️ AI
+  - DOMAIN,gemini.google.com,⁉️ AI
+  - DOMAIN,generativelanguage.googleapis.com,⁉️ AI
+  - DOMAIN,sydney.bing.com,⁉️ AI
+  - DOMAIN-SUFFIX,ai.azure.com,⁉️ AI
+  - DOMAIN-SUFFIX,anthropic.com,⁉️ AI
+  - DOMAIN-SUFFIX,bard.google.com,⁉️ AI
+  - DOMAIN-SUFFIX,claude.ai,⁉️ AI
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft,⁉️ AI
+  - DOMAIN-SUFFIX,copilot.microsoft.com,⁉️ AI
+  - DOMAIN-SUFFIX,events.statsigapi.net,⁉️ AI
+  - DOMAIN-SUFFIX,featuregates.org,⁉️ AI
+  - DOMAIN-SUFFIX,gemini.google.com,⁉️ AI
+  - DOMAIN-SUFFIX,grazie.ai,⁉️ AI
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net,⁉️ AI
+  - DOMAIN-SUFFIX,intercom.io,⁉️ AI
+  - DOMAIN-SUFFIX,intercomcdn.com,⁉️ AI
+  - DOMAIN-SUFFIX,makersuite.google.com,⁉️ AI
+  - DOMAIN-SUFFIX,meta.ai,⁉️ AI
+  - DOMAIN-SUFFIX,mistral.ai,⁉️ AI
+  - DOMAIN-SUFFIX,perplexity.ai,⁉️ AI
+  - DOMAIN-SUFFIX,sora.com,⁉️ AI
+  - DOMAIN-KEYWORD,youtube,📣 YouTube
+  - DOMAIN,youtubei.googleapis.com,📣 YouTube
+  - DOMAIN,yt3.ggpht.com,📣 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,📣 YouTube
+  - DOMAIN-SUFFIX,gvt2.com,📣 YouTube
+  - DOMAIN-SUFFIX,withyoutube.com,📣 YouTube
+  - DOMAIN-SUFFIX,youtu.be,📣 YouTube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📣 YouTube
+  - DOMAIN-SUFFIX,youtube.com,📣 YouTube
+  - DOMAIN-SUFFIX,youtubeeducation.com,📣 YouTube
+  - DOMAIN-SUFFIX,youtubegaming.com,📣 YouTube
+  - DOMAIN-SUFFIX,youtubekids.com,📣 YouTube
+  - DOMAIN-SUFFIX,yt.be,📣 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,📣 YouTube
+  - DOMAIN,lf16-effectcdn.byteeffecttos-g.com,📛 TikTok
+  - DOMAIN,lf16-pkgcdn.pitaya-clientai.com,📛 TikTok
+  - DOMAIN,p16-tiktokcdn-com.akamaized.net,📛 TikTok
+  - DOMAIN,trae-api-sg.mchost.guru,📛 TikTok
+  - DOMAIN-SUFFIX,bytedapm.com,📛 TikTok
+  - DOMAIN-SUFFIX,bytegecko-i18n.com,📛 TikTok
+  - DOMAIN-SUFFIX,byteintlapi.com,📛 TikTok
+  - DOMAIN-SUFFIX,byteoversea.com,📛 TikTok
+  - DOMAIN-SUFFIX,capcut.com,📛 TikTok
+  - DOMAIN-SUFFIX,ibytedtos.com,📛 TikTok
+  - DOMAIN-SUFFIX,ibyteimg.com,📛 TikTok
+  - DOMAIN-SUFFIX,ipstatp.com,📛 TikTok
+  - DOMAIN-SUFFIX,isnssdk.com,📛 TikTok
+  - DOMAIN-SUFFIX,marscode.com,📛 TikTok
+  - DOMAIN-SUFFIX,muscdn.com,📛 TikTok
+  - DOMAIN-SUFFIX,musical.ly,📛 TikTok
+  - DOMAIN-SUFFIX,sgpstatp.com,📛 TikTok
+  - DOMAIN-SUFFIX,snssdk.com,📛 TikTok
+  - DOMAIN-SUFFIX,tik-tokapi.com,📛 TikTok
+  - DOMAIN-SUFFIX,tiktok.com,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn-us.com,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn.com,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokd.net,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokd.org,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokmusic.app,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokv.com,📛 TikTok
+  - DOMAIN-SUFFIX,tiktokv.us,📛 TikTok
+  - DOMAIN-SUFFIX,trae.ai,📛 TikTok
+  - DOMAIN-SUFFIX,ttwebview.com,📛 TikTok
+  - DOMAIN-KEYWORD,musical.ly,📛 TikTok
+  - DOMAIN-KEYWORD,tiktok,📛 TikTok
+  - PROCESS-NAME,com.zhiliaoapp.musically,📛 TikTok
+  - DOMAIN-SUFFIX,prod-core.ros.rockstargames.com,🌟 GTA
+  - DOMAIN-SUFFIX,rockstargames.com,🌟 GTA
+  - DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net,🌟 GTA
+  - DOMAIN-SUFFIX,media-rockstargames-com.akamaized.net,🌟 GTA
+  - DOMAIN-SUFFIX,rsg.sc,🌟 GTA
+  - IP-CIDR,192.81.0.0/16,🌟 GTA
+  - DOMAIN-SUFFIX,paypal.com,💢 US
+  - DOMAIN-SUFFIX,paypalobjects.com,💢 US
+  - DOMAIN-SUFFIX,paypal-login.us,💢 US
+  - DOMAIN-SUFFIX,paypal-mainstreet.net,💢 US
+  - DOMAIN-SUFFIX,paypal-marketing.com,💢 US
+  - DOMAIN-SUFFIX,paypal-gift.com,💢 US
+  - DOMAIN-SUFFIX,paypal-gifts.com,💢 US
+  - DOMAIN-KEYWORD,paypal,💢 US
+  - GEOSITE,CN,⭕ 全球直连,no-resolve
+  - GEOSITE,geolocation-!cn,🚀 自动选择,no-resolve
+  - GEOIP,CN,⭕ 全球直连,no-resolve
+  - MATCH,🐟 漏网之鱼
